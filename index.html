@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>#2-CSS Basics</title>
+</head>
+<body>
+   
+    <div class="container">
+   <div>
+    <h2>Registration form</h2>
+   </div>
+      <form action="action.php" method="post">
+
+        <!-- Name -->
+       <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" >
+       </div>
+      <br>
+
+         <!-- Email -->
+       <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" >
+       </div>
+      <br>
+
+         <!-- Password -->
+       <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="xxxxxxxx">
+       </div>
+      <br>
+
+         <!-- confirm-password -->
+       <div>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="xxxxxxxx">
+       </div>
+      <br>
+
+               <!-- datalist -->
+      <div>
+      <label for="lists">Work Experience</label>
+      <input list="stack" name="lists">
+      <datalist id="stack">
+        <option value="Fresher">Fresher</option>
+        <option value="6 months">6 months</option>
+        <option value="1 year">1 year</option>
+        <option value="2 Year">2 Year</option>
+        <option value="3 Year">3 Year</option>
+      </datalist>
+
+      </div>
+      <br>
+      <button type="submit" value="submit">Submit</button>
+      <button type="reset" >Reset</button>
+      </form>
+    </div>
+</body>
+</html>
